@@ -1,0 +1,15 @@
+# Content Delivery Networks (CDNs)
+
+## Technical Paper
+
+
+CDN stands for Content Delivery Network and It is a geographically distributed network  of proxy servers and their data centers that work together to provide fast delivery of internet content. The main purpose of the CDN is to reduce time to reach user, we can say like reduce latency and the delay the users experience when requesting content by serving it from an edge located physically closer to the user rather than from origin server, which may located on another continent or country. When a user requests a static asset such as an local server or reginal server located physicall closer to the user rather than from the main server, which may be located on another place far away. When a user requests a static asset such as an image,stylesheet, or video , the CDN routes the request to the nearest point of present (pop) using the DNS-based redirection. If the edge server has the content cached, it returns it immediately. if not , the local server fetches the content from the main server, stores a copy for the future requests, and then delivers it to the user. Beyond latency reduction, CDNs offer some advantages, some of them are - they offload traffic from the origin server, thereby reducing bandwidth costs and preventing overload during traffic spikes; they improve availability and reliability by distributing requests across multiple servers, so that if one server fails, others can continue serving content; and they typically include security features such as DDoS mitigation, Web Application Firewalls (WAF), and SSL/TLS encryption to protect both the content provider and the end user. However, CDNs are not without challenges, Some of them are - dynamic or personalized content is difficult to cache, configuration requires technical expertise, and reliance on a third-party service introduces a dependency that can affect site availability if the CDN experiences an outage. Despite these considerations, CDNs have become a foundational component of modern web reduction, CDNs offer several advantages, they offload traffic from the main server, thereby reducing bandwidth costs and preventing overload during traffi spikes. architecture, enabling organizations to deliver high-performance, resilient, and secure digital experiences to a global audience.
+
+
+## References
+
+- YouTube  -- https://youtu.be/RI9np1LWzqw?si=sA-PP9HWnyLTTZtH
+- YouTube -- https://youtu.be/b4_6thkYZXs?si=65XXLjeYtjx24NO9
+- Microsoft -- "CDN guidance." -- https://learn.microsoft.com/en-us/azure/architecture/best-practices/cdn
+- Google -- "Content Delivery Networks (CDNs) for content-driven web applications." -- https://developers.google.com/solutions/content-driven/hosting/cdn
+- AWS Documentation. "How CloudFront delivers content." --https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html
